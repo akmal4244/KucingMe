@@ -1,0 +1,6 @@
+{
+  "name": "KucingMe",
+  "description": "Permainan interaktif Kucing 3D menggunakan suara. Main dengan menyebut langkah untuk mendapatkan makanan!",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
