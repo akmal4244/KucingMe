@@ -222,10 +222,16 @@ export default function App() {
       </div>
       
       {gameState === 'START' && (
-        <p className={`mt-8 text-sm font-medium text-center transition-colors ${weather === 'night' ? 'text-slate-400' : 'text-amber-700/60'}`}>
-          Nota: Memerlukan browser yang menyokong Web Speech API (seperti Google Chrome atau Edge).<br/>
-          Pastikan mikrofon dibenarkan. "Lompat" dan "Lari" boleh digunakan!
-        </p>
+        <footer className="mt-8 text-center">
+          <p className={`text-sm font-medium transition-colors ${weather === 'night' ? 'text-slate-400' : 'text-amber-700/60'}`}>
+            Nota: Memerlukan browser yang menyokong Web Speech API (seperti Google Chrome atau Edge).<br/>
+            Pastikan mikrofon dibenarkan. "Lompat" dan "Lari" boleh digunakan!
+          </p>
+          <p className={`mt-4 text-xs font-bold transition-colors ${weather === 'night' ? 'text-slate-500' : 'text-amber-800/70'}`}>
+            Dibangunkan Sepenuhnya Oleh Akmal Marvis<br/>
+            © {new Date().getFullYear()} KucingMe · Kuala Lumpur, Malaysia
+          </p>
+        </footer>
       )}
     </div>
   );
