@@ -77,13 +77,13 @@ export default function App() {
         </div>
       )}
 
-      <div className={`w-full max-w-6xl h-[85vh] min-h-[600px] bg-white rounded-[2rem] shadow-2xl overflow-hidden relative border-4 flex flex-col transition-colors duration-1000 ${weather === 'night' ? 'border-indigo-900 bg-slate-800' : 'border-amber-100 bg-white'}`}>
+      <div className={`w-full max-w-6xl h-[88dvh] md:h-[85vh] min-h-[520px] bg-white rounded-[2rem] shadow-2xl overflow-hidden relative border-4 flex flex-col transition-colors duration-1000 ${weather === 'night' ? 'border-indigo-900 bg-slate-800' : 'border-amber-100 bg-white'}`}>
         
         {/* --- MAIN MENU --- */}
         {gameState === 'START' && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-amber-50 to-amber-200 p-8 text-center z-10 overflow-y-auto">
+          <div className="absolute inset-0 flex flex-col items-center justify-start md:justify-center bg-gradient-to-b from-amber-50 to-amber-200 px-4 pt-20 pb-8 md:p-8 text-center z-10 overflow-y-auto">
             
-            <div className="absolute top-6 right-6 flex gap-4">
+            <div className="absolute top-4 right-4 md:top-6 md:right-6 flex gap-2 md:gap-4">
                <div className="bg-white/80 px-4 py-2 rounded-xl font-black text-amber-600 shadow-sm border border-amber-100 flex items-center gap-2">
                  <span>💰</span> {userData.coins}
                </div>
@@ -95,8 +95,8 @@ export default function App() {
                </button>
             </div>
 
-            <div className="text-9xl mb-4 animate-bounce drop-shadow-xl">🐈</div>
-            <h1 className="text-6xl font-black text-amber-800 drop-shadow-sm mb-2 tracking-tight">KucingMe</h1>
+            <div className="text-7xl md:text-9xl mb-4 animate-bounce drop-shadow-xl">🐈</div>
+            <h1 className="text-5xl md:text-6xl font-black text-amber-800 drop-shadow-sm mb-2 tracking-tight">KucingMe</h1>
             <p className="text-amber-700 font-bold mb-8 text-lg">Kawal dengan Suara Anda!</p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl mb-8">
