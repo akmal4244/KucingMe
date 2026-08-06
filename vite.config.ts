@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // GitHub Pages serves this project at /KucingMe/
-    base: '/KucingMe/',
+    // Relative base works on both GitHub Pages (/KucingMe/) and Cloudflare Pages (root)
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
